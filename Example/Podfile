@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LFTextField_Example' do
+  pod 'LFTextField', :path => '../'
+
+  target 'LFTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
