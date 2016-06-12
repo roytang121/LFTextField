@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FDE4949907633C4D4A71231ACC8763D /* Pods-LFTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9BA2F7EA25C70A0D903E176BB980C /* Pods-LFTextField_Example-dummy.m */; };
+		3F996DFD7376D2433A9881F0DDE7E4CC /* PredicateInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB03B89DFCEEA2230BF96BE22C14EB2 /* PredicateInspector.swift */; };
+		408F86D938EE5E7A44E7FCA33BBEEBCB /* LRTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49A04C2547C0024BD77C45804A23C254 /* LRTextField.bundle */; };
+		43D8FC02EF2B3807FCE18D03F324EB3B /* Pods-LFTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E460BF01B9A28001BD7D8B3853940B14 /* Pods-LFTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		518D5D4ECD5E72FE71D7E8605CC28AD0 /* LRTextFieldOverlay.xib in Sources */ = {isa = PBXBuildFile; fileRef = 803B61D62A61A305FB2909797DBE274C /* LRTextFieldOverlay.xib */; };
+		77CF086B2BAFD8F32727DF6BF856E6BD /* Pods-LFTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20FBEF195D4857D819103FC80176B3F3 /* Pods-LFTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ADE6700E33202C58790D7EF5AE858F2 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B7528FE97B503292AE887BBC083306AD /* RegExCategories.m */; };
+		7D7DFDD84BEAEF4EFF98299FDCD6A45B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		81AE5193C0668760F146B9E878C7D323 /* LFTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D021755661882314749222FBE751CB1C /* LFTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BB92E196721961B85ED7359F038C207 /* LFTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3671DDF0D73A1578BB4DC75E491E4A3 /* LFTextField-dummy.m */; };
+		99125EEE52991B03942C8667281D9313 /* LRTextFieldOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8119F0B16029324203313BE0DC963 /* LRTextFieldOverlay.swift */; };
+		AB6B14B234DE42B0ADC2C76F85882742 /* PredicateInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E36BA8F6A1BCFE7D7D0E3E3908E647 /* PredicateInspectable.swift */; };
+		B7689290DFAF7CBA6647B37C23006AD6 /* RegExCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = E225CDD97C5AC40EBFC93B70B60C7FEE /* RegExCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5B4D86212046F7F8344AD2C8534B3C4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A74E9E6FC489F3E227BD5FABA49F13 /* UIColorExtension.swift */; };
+		C9E1F694B96F3726E0E6AF8F4C352B0C /* LRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0317F4867288F0C40906F04E1B7180B2 /* LRTextField.swift */; };
+		CEC5AE2F73CA88EA4C9F3AAC6CE0E990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E28DEFB9267BB8AF70793030C5841403 /* Pods-LFTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741FB9B975D641057F9AC5A0DCD8468 /* Pods-LFTextField_Tests-dummy.m */; };
+		F9A7E2BBFF02DB553E6485AF69E70846 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB56998A7699280E1A8491D021001A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E088FC75B815181EA819E8DCEFBA2942;
+			remoteInfo = LFTextField;
+		};
+		CB7407A11DD90F56092D9D647097DD87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7080CD1AA54521486F175A9FD70EB0F5;
+			remoteInfo = "LFTextField-LRTextField";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0317F4867288F0C40906F04E1B7180B2 /* LRTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LRTextField.swift; sourceTree = "<group>"; };
+		20FBEF195D4857D819103FC80176B3F3 /* Pods-LFTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LFTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		21A74E9E6FC489F3E227BD5FABA49F13 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		34989962FD77F41AB83B01F2464A5B8C /* Pods-LFTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3967614E5D9D30B363D2CDE5936962B5 /* Pods-LFTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4047829F648FAC3BAA94D3A5DE66B47E /* ResourceBundle-LRTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LRTextField-Info.plist"; sourceTree = "<group>"; };
+		49A04C2547C0024BD77C45804A23C254 /* LRTextField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE352E5CA01F9F5D2FB7BA76BE34237 /* Pods-LFTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		513FB2239F400A6F2DE09BC0EB8E4976 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5741FB9B975D641057F9AC5A0DCD8468 /* Pods-LFTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		644D31786657F56E2D6BAC8E55BF7B0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6653E67FF8F091ED5843BA509FEFCD2A /* Pods_LFTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LFTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D890559727681FC8F4BF22618ABDDAB /* Pods-LFTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		73E9B4486D34ABBBC0A60C81258FB313 /* Pods-LFTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LFTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		7673D73F0DB07FC68557F1620AD008B7 /* Pods-LFTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		77A012BF83C8B32FCF7C9657EEBAA050 /* Pods-LFTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7E59E66D0AF1614084025654D6224F2D /* LFTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFTextField-prefix.pch"; sourceTree = "<group>"; };
+		803B61D62A61A305FB2909797DBE274C /* LRTextFieldOverlay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LRTextFieldOverlay.xib; sourceTree = "<group>"; };
+		82F9BA2F7EA25C70A0D903E176BB980C /* Pods-LFTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFTextField_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BC8119F0B16029324203313BE0DC963 /* LRTextFieldOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LRTextFieldOverlay.swift; sourceTree = "<group>"; };
+		ACBC8FABAC85CAAB5091C8F29C8CF745 /* Pods-LFTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFTextField_Example-resources.sh"; sourceTree = "<group>"; };
+		B6EBB847CDFD1AFACCA58FA16552A8A7 /* LFTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LFTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7528FE97B503292AE887BBC083306AD /* RegExCategories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		B769B1B340A23C0C00776B6A3BF36A48 /* Pods-LFTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFTextField_Tests-resources.sh"; sourceTree = "<group>"; };
+		C07489F03B7D67DF16649781F86C7E3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E36BA8F6A1BCFE7D7D0E3E3908E647 /* PredicateInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PredicateInspectable.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D021755661882314749222FBE751CB1C /* LFTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFTextField-umbrella.h"; sourceTree = "<group>"; };
+		D1EE15B092E23B3D427E119974765EF2 /* Pods-LFTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D3671DDF0D73A1578BB4DC75E491E4A3 /* LFTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LFTextField-dummy.m"; sourceTree = "<group>"; };
+		D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LFTextField.xcconfig; sourceTree = "<group>"; };
+		DAF506A2EB6BCD0507C61E06213A60E8 /* LFTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LFTextField.modulemap; sourceTree = "<group>"; };
+		DBC8BAA6356187A0E3008328CA8A0F06 /* Pods-LFTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LFTextField_Example.modulemap"; sourceTree = "<group>"; };
+		E225CDD97C5AC40EBFC93B70B60C7FEE /* RegExCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		E460BF01B9A28001BD7D8B3853940B14 /* Pods-LFTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LFTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		EAB03B89DFCEEA2230BF96BE22C14EB2 /* PredicateInspector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PredicateInspector.swift; sourceTree = "<group>"; };
+		EF74B521F6985D5D63BAD9DC8DF3E43E /* Pods_LFTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LFTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17F9D5EC91416E49E229F6121A148F1 /* Pods-LFTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F69BCE6043BC678609600D6D4BBFFBAD /* Pods-LFTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F98419C11471A866920CE5C3E9445068 /* Pods-LFTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2A67F3A1BA05989D8F34B5C1C83C671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A7E2BBFF02DB553E6485AF69E70846 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCDF838E7B064392BA24700EA7D88A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8C4032121C65D54A9F3CBE74DB3EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC5AE2F73CA88EA4C9F3AAC6CE0E990 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4C65F945C6EA3B4F2D75F41B01141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7DFDD84BEAEF4EFF98299FDCD6A45B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EB3980DAD2516E02E2E9FE5D12D3EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0317F4867288F0C40906F04E1B7180B2 /* LRTextField.swift */,
+				9BC8119F0B16029324203313BE0DC963 /* LRTextFieldOverlay.swift */,
+				803B61D62A61A305FB2909797DBE274C /* LRTextFieldOverlay.xib */,
+				C5E36BA8F6A1BCFE7D7D0E3E3908E647 /* PredicateInspectable.swift */,
+				EAB03B89DFCEEA2230BF96BE22C14EB2 /* PredicateInspector.swift */,
+				21A74E9E6FC489F3E227BD5FABA49F13 /* UIColorExtension.swift */,
+				884858D4EA4C5F041E1A2704F74F900E /* Objective-C-RegEx-Categories */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F66130CDADF719125B119071BFA681E /* LFTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9B09A7F05746A96A8E8BB9320C376FE6 /* LFTextField */,
+				2EC174B56B55004585BBDFDAAD5BDE42 /* Support Files */,
+			);
+			name = LFTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2EC174B56B55004585BBDFDAAD5BDE42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C07489F03B7D67DF16649781F86C7E3C /* Info.plist */,
+				DAF506A2EB6BCD0507C61E06213A60E8 /* LFTextField.modulemap */,
+				D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */,
+				D3671DDF0D73A1578BB4DC75E491E4A3 /* LFTextField-dummy.m */,
+				7E59E66D0AF1614084025654D6224F2D /* LFTextField-prefix.pch */,
+				D021755661882314749222FBE751CB1C /* LFTextField-umbrella.h */,
+				4047829F648FAC3BAA94D3A5DE66B47E /* ResourceBundle-LRTextField-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LFTextField";
+			sourceTree = "<group>";
+		};
+		3BA444FA56196188CF41A2EC4760C800 /* Pods-LFTextField_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				513FB2239F400A6F2DE09BC0EB8E4976 /* Info.plist */,
+				73E9B4486D34ABBBC0A60C81258FB313 /* Pods-LFTextField_Tests.modulemap */,
+				F98419C11471A866920CE5C3E9445068 /* Pods-LFTextField_Tests-acknowledgements.markdown */,
+				F17F9D5EC91416E49E229F6121A148F1 /* Pods-LFTextField_Tests-acknowledgements.plist */,
+				5741FB9B975D641057F9AC5A0DCD8468 /* Pods-LFTextField_Tests-dummy.m */,
+				F69BCE6043BC678609600D6D4BBFFBAD /* Pods-LFTextField_Tests-frameworks.sh */,
+				B769B1B340A23C0C00776B6A3BF36A48 /* Pods-LFTextField_Tests-resources.sh */,
+				20FBEF195D4857D819103FC80176B3F3 /* Pods-LFTextField_Tests-umbrella.h */,
+				6D890559727681FC8F4BF22618ABDDAB /* Pods-LFTextField_Tests.debug.xcconfig */,
+				D1EE15B092E23B3D427E119974765EF2 /* Pods-LFTextField_Tests.release.xcconfig */,
+			);
+			name = "Pods-LFTextField_Tests";
+			path = "Target Support Files/Pods-LFTextField_Tests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C6103D3346CF9A16F7EC8975F458337E /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F8645A10F14A3E4CA6C7360B423A1759 /* Products */,
+				B2A7D368470089E3C21E5FD404DF318C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		859D96D44C1200F42B91C2183BF1C3D2 /* Pods-LFTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				644D31786657F56E2D6BAC8E55BF7B0C /* Info.plist */,
+				DBC8BAA6356187A0E3008328CA8A0F06 /* Pods-LFTextField_Example.modulemap */,
+				4FE352E5CA01F9F5D2FB7BA76BE34237 /* Pods-LFTextField_Example-acknowledgements.markdown */,
+				7673D73F0DB07FC68557F1620AD008B7 /* Pods-LFTextField_Example-acknowledgements.plist */,
+				82F9BA2F7EA25C70A0D903E176BB980C /* Pods-LFTextField_Example-dummy.m */,
+				77A012BF83C8B32FCF7C9657EEBAA050 /* Pods-LFTextField_Example-frameworks.sh */,
+				ACBC8FABAC85CAAB5091C8F29C8CF745 /* Pods-LFTextField_Example-resources.sh */,
+				E460BF01B9A28001BD7D8B3853940B14 /* Pods-LFTextField_Example-umbrella.h */,
+				3967614E5D9D30B363D2CDE5936962B5 /* Pods-LFTextField_Example.debug.xcconfig */,
+				34989962FD77F41AB83B01F2464A5B8C /* Pods-LFTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-LFTextField_Example";
+			path = "Target Support Files/Pods-LFTextField_Example";
+			sourceTree = "<group>";
+		};
+		884858D4EA4C5F041E1A2704F74F900E /* Objective-C-RegEx-Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E225CDD97C5AC40EBFC93B70B60C7FEE /* RegExCategories.h */,
+				B7528FE97B503292AE887BBC083306AD /* RegExCategories.m */,
+			);
+			path = "Objective-C-RegEx-Categories";
+			sourceTree = "<group>";
+		};
+		9B09A7F05746A96A8E8BB9320C376FE6 /* LFTextField */ = {
+			isa = PBXGroup;
+			children = (
+				18EB3980DAD2516E02E2E9FE5D12D3EC /* Classes */,
+			);
+			path = LFTextField;
+			sourceTree = "<group>";
+		};
+		B2A7D368470089E3C21E5FD404DF318C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				859D96D44C1200F42B91C2183BF1C3D2 /* Pods-LFTextField_Example */,
+				3BA444FA56196188CF41A2EC4760C800 /* Pods-LFTextField_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6103D3346CF9A16F7EC8975F458337E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F66130CDADF719125B119071BFA681E /* LFTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F8645A10F14A3E4CA6C7360B423A1759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBB847CDFD1AFACCA58FA16552A8A7 /* LFTextField.framework */,
+				49A04C2547C0024BD77C45804A23C254 /* LRTextField.bundle */,
+				6653E67FF8F091ED5843BA509FEFCD2A /* Pods_LFTextField_Example.framework */,
+				EF74B521F6985D5D63BAD9DC8DF3E43E /* Pods_LFTextField_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5619185B79F62850F1E29F410FD7D96F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AE5193C0668760F146B9E878C7D323 /* LFTextField-umbrella.h in Headers */,
+				B7689290DFAF7CBA6647B37C23006AD6 /* RegExCategories.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A02E40589CC7F1B317077C695EDAA5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CF086B2BAFD8F32727DF6BF856E6BD /* Pods-LFTextField_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB8E4D7D43705148A31B80281F8F5D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D8FC02EF2B3807FCE18D03F324EB3B /* Pods-LFTextField_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41B20E0DC024C2E5A5A22398E547C428 /* Pods-LFTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E067A85B1B61A5729E09E852322FB156 /* Build configuration list for PBXNativeTarget "Pods-LFTextField_Tests" */;
+			buildPhases = (
+				82B52D35886B2CE2D867A6A5D1E460E5 /* Sources */,
+				DD4C65F945C6EA3B4F2D75F41B01141E /* Frameworks */,
+				6A02E40589CC7F1B317077C695EDAA5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LFTextField_Tests";
+			productName = "Pods-LFTextField_Tests";
+			productReference = EF74B521F6985D5D63BAD9DC8DF3E43E /* Pods_LFTextField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6505FD725440CA51378E6B2DA2F50A7E /* Pods-LFTextField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FE58174D542F9A9B307B27DC9C5282 /* Build configuration list for PBXNativeTarget "Pods-LFTextField_Example" */;
+			buildPhases = (
+				39027757288F28A6C82A93423C1FC6E2 /* Sources */,
+				CD8C4032121C65D54A9F3CBE74DB3EB8 /* Frameworks */,
+				BDB8E4D7D43705148A31B80281F8F5D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3D5EAA4DF7A9BE4898CD607C8FAA0FC /* PBXTargetDependency */,
+			);
+			name = "Pods-LFTextField_Example";
+			productName = "Pods-LFTextField_Example";
+			productReference = 6653E67FF8F091ED5843BA509FEFCD2A /* Pods_LFTextField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7080CD1AA54521486F175A9FD70EB0F5 /* LFTextField-LRTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD74CC2621E251B52DE87AE06277627C /* Build configuration list for PBXNativeTarget "LFTextField-LRTextField" */;
+			buildPhases = (
+				BB2D812AF285F2130F3348D97ECCA68E /* Sources */,
+				ACCDF838E7B064392BA24700EA7D88A4 /* Frameworks */,
+				65EBF8A14ED823FD7CE4A1BA6A3C19FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LFTextField-LRTextField";
+			productName = "LFTextField-LRTextField";
+			productReference = 49A04C2547C0024BD77C45804A23C254 /* LRTextField.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E088FC75B815181EA819E8DCEFBA2942 /* LFTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47A35CFBBE3E8F2F7391D2D8B98AFE9 /* Build configuration list for PBXNativeTarget "LFTextField" */;
+			buildPhases = (
+				39E4E1F4C1B8DF7FB250D0A655ED18B4 /* Sources */,
+				A2A67F3A1BA05989D8F34B5C1C83C671 /* Frameworks */,
+				E1472D43E4DEEFDAFF68AED03A534422 /* Resources */,
+				5619185B79F62850F1E29F410FD7D96F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726DD7CE430F36506E770E423064488F /* PBXTargetDependency */,
+			);
+			name = LFTextField;
+			productName = LFTextField;
+			productReference = B6EBB847CDFD1AFACCA58FA16552A8A7 /* LFTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F8645A10F14A3E4CA6C7360B423A1759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E088FC75B815181EA819E8DCEFBA2942 /* LFTextField */,
+				7080CD1AA54521486F175A9FD70EB0F5 /* LFTextField-LRTextField */,
+				6505FD725440CA51378E6B2DA2F50A7E /* Pods-LFTextField_Example */,
+				41B20E0DC024C2E5A5A22398E547C428 /* Pods-LFTextField_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65EBF8A14ED823FD7CE4A1BA6A3C19FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1472D43E4DEEFDAFF68AED03A534422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408F86D938EE5E7A44E7FCA33BBEEBCB /* LRTextField.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39027757288F28A6C82A93423C1FC6E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDE4949907633C4D4A71231ACC8763D /* Pods-LFTextField_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E4E1F4C1B8DF7FB250D0A655ED18B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB92E196721961B85ED7359F038C207 /* LFTextField-dummy.m in Sources */,
+				C9E1F694B96F3726E0E6AF8F4C352B0C /* LRTextField.swift in Sources */,
+				99125EEE52991B03942C8667281D9313 /* LRTextFieldOverlay.swift in Sources */,
+				518D5D4ECD5E72FE71D7E8605CC28AD0 /* LRTextFieldOverlay.xib in Sources */,
+				AB6B14B234DE42B0ADC2C76F85882742 /* PredicateInspectable.swift in Sources */,
+				3F996DFD7376D2433A9881F0DDE7E4CC /* PredicateInspector.swift in Sources */,
+				7ADE6700E33202C58790D7EF5AE858F2 /* RegExCategories.m in Sources */,
+				C5B4D86212046F7F8344AD2C8534B3C4 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B52D35886B2CE2D867A6A5D1E460E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28DEFB9267BB8AF70793030C5841403 /* Pods-LFTextField_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2D812AF285F2130F3348D97ECCA68E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726DD7CE430F36506E770E423064488F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LFTextField-LRTextField";
+			target = 7080CD1AA54521486F175A9FD70EB0F5 /* LFTextField-LRTextField */;
+			targetProxy = CB7407A11DD90F56092D9D647097DD87 /* PBXContainerItemProxy */;
+		};
+		A3D5EAA4DF7A9BE4898CD607C8FAA0FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LFTextField;
+			target = E088FC75B815181EA819E8DCEFBA2942 /* LFTextField */;
+			targetProxy = AB56998A7699280E1A8491D021001A1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0070B7FD1F97FA429720B83ECADD25D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LFTextField";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LFTextField/ResourceBundle-LRTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LRTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0498DFCE3D63A3F5E97E4EE62931DF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LFTextField";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LFTextField/ResourceBundle-LRTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LRTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C0371351599AF46A714A65B41838072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3967614E5D9D30B363D2CDE5936962B5 /* Pods-LFTextField_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LFTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LFTextField_Example/Pods-LFTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LFTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		648D95E798841851D86E7ACEC3A11924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34989962FD77F41AB83B01F2464A5B8C /* Pods-LFTextField_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LFTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LFTextField_Example/Pods-LFTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LFTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C43E1FF645E70894F6ED2148D3820A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LFTextField/LFTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LFTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LFTextField/LFTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LFTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EFBD4E24FB8DDD5448960B82BE4526AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D904DAD3857A6129E04978F5713B961F /* LFTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LFTextField/LFTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LFTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LFTextField/LFTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LFTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1A25F4406ACEE7215DC2C7F9684F125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EE15B092E23B3D427E119974765EF2 /* Pods-LFTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LFTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LFTextField_Tests/Pods-LFTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LFTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F284B33EAC55E66634B3BEF013841679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D890559727681FC8F4BF22618ABDDAB /* Pods-LFTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LFTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LFTextField_Tests/Pods-LFTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LFTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FE58174D542F9A9B307B27DC9C5282 /* Build configuration list for PBXNativeTarget "Pods-LFTextField_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0371351599AF46A714A65B41838072 /* Debug */,
+				648D95E798841851D86E7ACEC3A11924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47A35CFBBE3E8F2F7391D2D8B98AFE9 /* Build configuration list for PBXNativeTarget "LFTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBD4E24FB8DDD5448960B82BE4526AA /* Debug */,
+				C43E1FF645E70894F6ED2148D3820A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD74CC2621E251B52DE87AE06277627C /* Build configuration list for PBXNativeTarget "LFTextField-LRTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0498DFCE3D63A3F5E97E4EE62931DF67 /* Debug */,
+				0070B7FD1F97FA429720B83ECADD25D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E067A85B1B61A5729E09E852322FB156 /* Build configuration list for PBXNativeTarget "Pods-LFTextField_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F284B33EAC55E66634B3BEF013841679 /* Debug */,
+				F1A25F4406ACEE7215DC2C7F9684F125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
