@@ -42,7 +42,7 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
 //  static let kFieldTypePassword = "password"
   
   // MARK: public properties
-  weak var inputTextField: UITextField!
+  public weak var inputTextField: UITextField!
   
   var state: LFTextFieldOverlay.State = .Normal {
     didSet {
