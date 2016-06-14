@@ -1,6 +1,6 @@
 //
-//  LRTextField.swift
-//  LRTextField
+//  LFTextField.swift
+//  LFTextField
 //
 //  Created by Roy Tang on 11/10/2015.
 //  Copyright © 2015 lerryrowy. All rights reserved.
@@ -11,8 +11,12 @@ import UIKit
 
 
 func getResourcesBundle() -> NSBundle? {
-  let podBundle = NSBundle(forClass: LRTextField.self)
+  let podBundle = NSBundle(forClass: LFTextField.self)
   if let bundleURL = podBundle.URLForResource("LFTextField", withExtension: "bundle") {
+    let urls = try? NSFileManager.defaultManager().contentsOfDirectoryAtURL(bundleURL, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions())
+    urls?.forEach({ (url) in
+      print(url.path!)
+    })
     return NSBundle(URL: bundleURL)
   } else {
     return nil
@@ -20,9 +24,9 @@ func getResourcesBundle() -> NSBundle? {
 }
 
 @IBDesignable
-public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegate {
+public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegate {
   
-  private var overlay: LRTextFieldOverlay! {
+  private var overlay: LFTextFieldOverlay! {
     didSet {
       self.inputTextField = self.overlay?.textField
     }
@@ -40,7 +44,7 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
   // MARK: public properties
   weak var inputTextField: UITextField!
   
-  var state: LRTextFieldOverlay.State = .Normal {
+  var state: LFTextFieldOverlay.State = .Normal {
     didSet {
       
       if self.state == .OK {
@@ -63,6 +67,12 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
     }
   }
   
+  @IBInspectable var titleIcon: String? {
+    didSet {
+      overlay?.titleIconAssetName = titleIcon
+    }
+  }
+  
   @IBInspectable var alertColor: UIColor! {
     didSet {
       overlay?.colorAlert = alertColor
@@ -82,7 +92,7 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
       }
       
       switch fieldType! {
-      case LRTextField.kFieldTypeEmail:
+      case LFTextField.kFieldTypeEmail:
         self.inspector?.pattern = PredicateInspector.kPatternEmail
         break
       default:
@@ -131,7 +141,7 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
   
   var popUpTopPadding: CGFloat = 3.0
   
-  @IBInspectable var popupTitle: String! {
+  @IBInspectable public var popupTitle: String! {
     didSet {
       self.popup?.text = self.popupTitle
     }
@@ -151,7 +161,7 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
   }
   
   func setup() {
-    self.overlay = NSBundle(forClass: self.dynamicType).loadNibNamed("LRTextFieldOverlay", owner: self, options: nil)[0] as? LRTextFieldOverlay
+    self.overlay = NSBundle(forClass: self.dynamicType).loadNibNamed("LFTextFieldOverlay", owner: self, options: nil)[0] as? LFTextFieldOverlay
     
     self.addSubview(self.overlay)
     
@@ -180,6 +190,7 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
 //    } else {
 //      self.state = .Normal
 //    }
+    print(self.isValid())
   }
   
   // MARK: @IBDesignable
@@ -250,6 +261,10 @@ public class LRTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
         
         }, completion: nil)
     }
+  }
+  
+  public func isValid() -> Bool {
+    return self.inspector.lastMatchResult ?? false
   }
   
   

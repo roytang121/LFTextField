@@ -1,5 +1,5 @@
 PODS:
-  - LFTextField (0.2.0)
+  - LFTextField (0.2.1)
 
 DEPENDENCIES:
   - LFTextField (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LFTextField: d8bf746c1df7dafdd34a986efef088035d1467d9
+  LFTextField: ea424dc548da4c0087f496307adaaa51bdf2e7d6
 
 PODFILE CHECKSUM: b9f66c714c18c88976e186ab1bee4abde38a03c8
 

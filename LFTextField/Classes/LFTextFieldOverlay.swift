@@ -1,6 +1,6 @@
 //
-//  LRTextField.swift
-//  LRTextField
+//  LFTextField.swift
+//  LFTextField
 //
 //  Created by Roy Tang on 11/10/2015.
 //  Copyright © 2015 lerryrowy. All rights reserved.
@@ -9,10 +9,23 @@
 import Foundation
 import UIKit
 
-class LRTextFieldOverlay: UIView {
+class LFTextFieldOverlay: UIView {
   
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var titleIcon: UIImageView!
+  
+  /** - Remark: if set it should be referenced to mainBundle */
+  var titleIconAssetName: String? {
+    didSet {
+      print("trigger")
+      // Title icon
+      if let _titleIconAssetName = self.titleIconAssetName {
+        self.titleIcon.image = UIImage(named: _titleIconAssetName)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+      } else {
+        self.titleIcon.image = UIImage(named: "warning", inBundle: getResourcesBundle(), compatibleWithTraitCollection: nil)?.imageWithRenderingMode(.AlwaysTemplate)
+      }
+    }
+  }
   
   @IBOutlet weak var textField: UITextField!
   
@@ -75,10 +88,9 @@ class LRTextFieldOverlay: UIView {
     self.titleLabel.clipsToBounds = true
     self.titleLabel.layer.masksToBounds = true
     
-    // Title icon
-    self.titleIcon.image = UIImage(named: "warning")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-    self.titleIcon.tintColor = UIColor.redColor()
+//    self.titleIcon.tintColor = UIColor.redColor()
     // set kern values for placeholder
+    
   }
   
   override func layoutSubviews() {

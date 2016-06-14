@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "85035B40123BEC397BDD82F4387B61BAB613E5CD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "835823AEDF87955413A4C150DF752C9DCF760CFC" : 0,
+    "85035B40123BEC397BDD82F4387B61BAB613E5CD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "25F0C4D5-0383-433B-8043-F9DA1A9E122D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "835823AEDF87955413A4C150DF752C9DCF760CFC" : "..",
+    "85035B40123BEC397BDD82F4387B61BAB613E5CD" : "LFTextField\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LFTextField",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/LFTextField.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/roytang121\/LRTextField",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "835823AEDF87955413A4C150DF752C9DCF760CFC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/roytang121\/LFTextField",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "85035B40123BEC397BDD82F4387B61BAB613E5CD"
+    }
+  ]
+}

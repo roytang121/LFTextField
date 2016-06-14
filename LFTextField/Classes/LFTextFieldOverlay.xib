@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LRTextFieldOverlay" customModule="LRTextField" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LFTextFieldOverlay" customModule="LFTextField" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -57,7 +57,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="stateIcon" destination="jdn-ih-YrV" id="ho7-Dd-oVw"/>
+                <outlet property="stateIcon" destination="jdn-ih-YrV" id="Jb7-bu-OIf"/>
                 <outlet property="textField" destination="Gq9-uF-dmr" id="DgC-Lv-SJM"/>
                 <outlet property="titleIcon" destination="SAc-9t-sZu" id="kVh-eE-AIH"/>
                 <outlet property="titleLabel" destination="Ghd-qH-FXh" id="Mxg-DH-nBK"/>

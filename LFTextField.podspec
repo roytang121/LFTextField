@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LFTextField'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A customizable UITextField'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source_files = 'LFTextField/Classes/**/*'
 
   s.resource_bundles = {
-    'LRTextField' => ['LFTextField/Assets/**/*.png']
+    'LFTextField' => ['LFTextField/Assets/**/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
