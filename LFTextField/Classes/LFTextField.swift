@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+public protocol LFTextFieldDelegate: class {
+  func textFieldValueDidChange(sender: AnyObject?)
+}
 
 public enum LFBorderStyle {
   case Rounded
@@ -30,7 +33,7 @@ func getResourcesBundle() -> NSBundle? {
 }
 
 @IBDesignable
-public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegate {
+public class LFTextField: UIView, PredicateInspectorDelegate {
 
   
   private var overlay: LFTextFieldOverlay! {
@@ -49,6 +52,8 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
   
   // MARK: public properties
   public weak var inputTextField: UITextField!
+  
+  public weak var delegate: LFTextFieldDelegate?
   
   var state: LFTextFieldOverlay.State = .Normal {
     didSet {
@@ -194,17 +199,6 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
     addPopupMessage(self.popupTitle)
   }
   
-  // MARK: UITextFieldDelegate
-  
-  func textFieldValueDidChange(textField: UITextField) {
-//    if textField.text == "" {
-//      self.state = .Alert
-//    } else {
-//      self.state = .Normal
-//    }
-//    print(self.isValid())
-  }
-  
   // MARK: @IBDesignable
   override public func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
@@ -298,4 +292,12 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
     self.inputTextField = nil
   }
   
+}
+
+extension LFTextField: UITextFieldDelegate {
+  
+  // textfield target selector
+  func textFieldValueDidChange(sender: AnyObject?) {
+    self.delegate?.textFieldValueDidChange(sender)
+  }
 }
