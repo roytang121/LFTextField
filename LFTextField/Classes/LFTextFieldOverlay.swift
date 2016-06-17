@@ -11,6 +11,12 @@ import UIKit
 
 class LFTextFieldOverlay: UIView {
   
+  var style: LFBorderStyle = .Rounded {
+    didSet {
+      self.setStyle(self.style)
+    }
+  }
+  
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var titleIcon: UIImageView!
   
@@ -100,28 +106,7 @@ class LFTextFieldOverlay: UIView {
 //      return
 //    }
     
-    // create border and rounded corner
-    layer.cornerRadius = cornerRadius
-    layer.borderWidth = borderWidth
-    layer.borderColor = colorLightGray.CGColor
-    
-    
-    // add Right Border to textField
-    if self.borderLayer != nil {
-      self.borderLayer.removeFromSuperlayer()
-      self.borderLayer = nil
-    }
-    
-    if self.borderLayer == nil {
-      let textFieldFrame = titleLabel.layer.frame
-      let borderFrame = CGRectMake(textFieldFrame.width, 0, borderWidth, self.frame.height)
-      let borderLayer = CAShapeLayer()
-      borderLayer.frame = borderFrame
-      borderLayer.backgroundColor = colorLightGray.CGColor
-      self.layer.addSublayer(borderLayer)
-      
-      self.borderLayer = borderLayer
-    }
+    setStyle(self.style)
     
     // configure if title Label is need
     
@@ -180,7 +165,7 @@ class LFTextFieldOverlay: UIView {
       let anim = self.animationBackgroundColor(color)
       let borderAnim = self.animationBorderColor(color)
       
-      self.borderLayer?.addAnimation(anim, forKey: NSUUID().UUIDString)
+//      self.borderLayer?.addAnimation(anim, forKey: NSUUID().UUIDString)
       self.layer.addAnimation(borderAnim, forKey: NSUUID().UUIDString)
     }
   }
@@ -201,6 +186,81 @@ class LFTextFieldOverlay: UIView {
     anim.fillMode = kCAFillModeForwards
     anim.removedOnCompletion = false
     return anim
+  }
+  
+  public func setStyle(style: LFBorderStyle) {
+    switch style {
+    case .Rounded:
+      self.roundedBorder()
+      break
+    case .Underline:
+      self.underlineBorder()
+      break
+    }
+    
+    setNeedsLayout()
+  }
+  
+  func roundedBorder() {
+    // create border and rounded corner
+    layer.cornerRadius = cornerRadius
+    layer.borderWidth = borderWidth
+    layer.borderColor = colorLightGray.CGColor
+    
+    
+    // add Right Border to textField
+    if self.borderLayer != nil {
+      self.borderLayer.removeFromSuperlayer()
+      self.borderLayer = nil
+    }
+    
+    if self.borderLayer == nil {
+      let textFieldFrame = titleLabel.layer.frame
+      let borderFrame = CGRectMake(textFieldFrame.width, 0, borderWidth, self.frame.height)
+      let borderLayer = CAShapeLayer()
+      borderLayer.frame = borderFrame
+      borderLayer.backgroundColor = colorLightGray.CGColor
+      self.layer.addSublayer(borderLayer)
+      
+      self.borderLayer = borderLayer
+    }
+  }
+  
+  func underlineBorder() {
+    layer.borderWidth = 0
+//    layer.borderColor = UIColor.clearColor().CGColor
+    
+    if self.borderLayer != nil {
+      self.borderLayer.removeFromSuperlayer()
+      self.borderLayer = nil
+    }
+    
+    if self.borderLayer == nil {
+      let layerFrame = self.layer.bounds
+      let borderLayer = CAShapeLayer()
+      borderLayer.frame = layerFrame
+      
+      // make a bucket shape line
+      let line = UIBezierPath()
+      
+      let bottom = borderLayer.bounds.height - 6
+      let top = bottom - 6
+      
+      line.moveToPoint(CGPoint(x: 0, y: top))
+      line.addLineToPoint(CGPoint(x: 0, y: bottom))
+      line.addLineToPoint(CGPoint(x: borderLayer.bounds.width, y: bottom))
+      line.moveToPoint(CGPoint(x: borderLayer.bounds.width, y: top))
+      line.addLineToPoint(CGPoint(x: borderLayer.bounds.width, y: bottom))
+      borderLayer.path = line.CGPath
+      borderLayer.fillColor = nil
+      borderLayer.opacity = 1
+      borderLayer.lineWidth = 1.0
+      borderLayer.lineCap = kCALineCapRound
+      borderLayer.strokeColor = UIColor.lightGrayColor().CGColor
+      self.layer.addSublayer(borderLayer)
+      
+      self.borderLayer = borderLayer
+    }
   }
   
   // MARK: IBDesignable

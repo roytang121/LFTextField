@@ -10,13 +10,19 @@ import Foundation
 import UIKit
 
 
+public enum LFBorderStyle {
+  case Rounded
+  case Underline
+}
+
 func getResourcesBundle() -> NSBundle? {
   let podBundle = NSBundle(forClass: LFTextField.self)
   if let bundleURL = podBundle.URLForResource("LFTextField", withExtension: "bundle") {
     let urls = try? NSFileManager.defaultManager().contentsOfDirectoryAtURL(bundleURL, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions())
-    urls?.forEach({ (url) in
-      print(url.path!)
-    })
+    // print bundle source
+//    urls?.forEach({ (url) in
+//      print(url.path!)
+//    })
     return NSBundle(URL: bundleURL)
   } else {
     return nil
@@ -25,6 +31,7 @@ func getResourcesBundle() -> NSBundle? {
 
 @IBDesignable
 public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegate {
+
   
   private var overlay: LFTextFieldOverlay! {
     didSet {
@@ -35,7 +42,6 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
   private var isIB: Bool = false
   
   private var inspector: PredicateInspector!
-  
   
   static let kFieldTypeNormal = "normal"
   static let kFieldTypeEmail = "email"
@@ -127,6 +133,12 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
     }
   }
   
+  public var style: LFBorderStyle = .Rounded {
+    didSet {
+      self.overlay.style = self.style
+    }
+  }
+  
   // MARK: Popup Message Properties
   
   var popup: UILabel!
@@ -190,7 +202,7 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
 //    } else {
 //      self.state = .Normal
 //    }
-    print(self.isValid())
+//    print(self.isValid())
   }
   
   // MARK: @IBDesignable
