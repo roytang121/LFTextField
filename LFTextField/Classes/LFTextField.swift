@@ -270,6 +270,7 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
   }
   
   public func isValid() -> Bool {
+    self.inspector.inspect(self.inputTextField)
     return self.inspector.lastMatchResult ?? false
   }
   

@@ -60,8 +60,7 @@ class PredicateInspector: NSObject, UITextFieldDelegate {
     textField?.addTarget(self, action: Selector("textFieldValueDidChanged:"), forControlEvents: UIControlEvents.EditingChanged)
   }
   
-  func textFieldValueDidChanged(sender: UITextField) {
-    
+  func inspect(sender: UITextField) {
     if self.pattern == nil {
       return
     }
@@ -82,5 +81,9 @@ class PredicateInspector: NSObject, UITextFieldDelegate {
       
       lastMatchResult = match
     }
+  }
+  
+  func textFieldValueDidChanged(sender: UITextField) {
+    self.inspect(sender)
   }
 }
