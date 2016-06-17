@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod "LFTextField"
 ```
 
+Since this pod is rapidly changing, using the github source is *recommeneded*
+```ruby
+pod 'LFTextField', :git => 'https://github.com/roytang121/LFTextField'
+```
+
 ## Author
 
 Roy Tang, me@roytang.me
