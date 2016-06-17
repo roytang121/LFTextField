@@ -229,7 +229,7 @@ public class LFTextField: UIView, UITextFieldDelegate, PredicateInspectorDelegat
     }
   }
   
-  func showPopupWithTitle(message _message: String?) {
+  public func showPopupWithTitle(message _message: String?) {
     if let message = _message {
       self.popup.text = message
       self.popup.sizeToFit()

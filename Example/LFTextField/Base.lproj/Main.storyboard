@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,26 +19,41 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-Id-C8o" customClass="LFTextField" customModule="LFTextField">
-                                <rect key="frame" x="100" y="270" width="400" height="60"/>
+                                <rect key="frame" x="60" y="270" width="480" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="wp2-R4-CqJ"/>
-                                    <constraint firstAttribute="width" constant="400" id="yKN-FA-qGK"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleIcon" value="password_colour"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="popupTitle" value="Popup error custom message"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQY-wn-zOR">
+                                <rect key="frame" x="257" y="338" width="86" height="30"/>
+                                <state key="normal" title="Show Popup"/>
+                                <connections>
+                                    <action selector="didShowPopupButtonClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q0e-qv-DLk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eQY-wn-zOR" firstAttribute="top" secondItem="vrc-Id-C8o" secondAttribute="bottom" constant="8" id="5Ro-Xz-fhh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vrc-Id-C8o" secondAttribute="trailing" constant="40" id="CpO-Np-pxQ"/>
                             <constraint firstItem="vrc-Id-C8o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="K2j-sS-6Kt"/>
+                            <constraint firstItem="vrc-Id-C8o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="XF5-9k-MWM"/>
                             <constraint firstItem="vrc-Id-C8o" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="hnd-Oz-1Qh"/>
+                            <constraint firstItem="eQY-wn-zOR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="u9h-wk-zod"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="vrc-Id-C8o" id="1zb-6D-Luk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="235"/>
         </scene>
     </scenes>
 </document>
