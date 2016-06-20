@@ -53,7 +53,11 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
   // MARK: public properties
   public weak var inputTextField: UITextField!
   
-  public weak var delegate: LFTextFieldDelegate?
+  public weak var delegate: LFTextFieldDelegate? {
+    didSet {
+      self.inputTextField?.delegate = delegate as? UITextFieldDelegate
+    }
+  }
   
   var state: LFTextFieldOverlay.State = .Normal {
     didSet {
