@@ -251,12 +251,16 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     }
   }
 
-  public func showPopupWithTitle(message _message: String?) {
+  public func showPopupWithTitle(message _message: String?, showErrorStatus: Bool = false) {
     if let message = _message {
       self.popup.text = message
       self.popup.sizeToFit()
     }
     self.isShowingHint = true
+
+    if showErrorStatus {
+      self.state = .Alert
+    }
 
     if let popup = self.popup {
       popup.frame.offsetInPlace(dx: 0, dy: -popup.bounds.height)
@@ -272,9 +276,13 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     }
   }
 
-  public func hidePopupAnimated(animated: Bool = true) {
+  public func hidePopupAnimated(animated: Bool = true, resetNormalStatus: Bool = true) {
 
     self.isShowingHint = false
+
+    if resetNormalStatus && self.state == .Alert {
+      self.state = .Normal
+    }
 
     if !animated {
 
