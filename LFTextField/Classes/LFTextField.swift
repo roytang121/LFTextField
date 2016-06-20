@@ -191,6 +191,10 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     self.inspector.pattern = PredicateInspector.kPatternEmail
   }
   
+  override public func resignFirstResponder() -> Bool {
+    return self.inputTextField?.resignFirstResponder() ?? super.resignFirstResponder()
+  }
+  
   override public func layoutSubviews() {
     super.layoutSubviews()
     
