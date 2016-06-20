@@ -29,6 +29,13 @@ class PredicateInspector: NSObject, UITextFieldDelegate {
 
   static let kPatternEmail = Pattern(name: "email", regex: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}")
 
+  enum InspectResult {
+    case NoPattern
+    case Error
+    case SameAsPrevious
+    case Pass
+  }
+
   var pattern: Pattern? {
     didSet {
 
@@ -50,44 +57,59 @@ class PredicateInspector: NSObject, UITextFieldDelegate {
 
   var lastMatchResult: Bool?
 
-  var shouldAutoCheckTextView: Bool = true
-
   override init() {
 
   }
 
   init(textField: UITextField?) {
     super.init()
-
-    textField?.addTarget(self, action: Selector("textFieldValueDidChanged:"), forControlEvents: UIControlEvents.EditingChanged)
   }
 
   func inspect(sender: UITextField) {
-    if self.pattern == nil {
+
+    switch coreInspect(sender) {
+    case .NoPattern, .SameAsPrevious:
       return
+    case .Pass:
+      self.delegate?.predicateInspectorMatchSuccess(self, pattern: pattern!)
+    case .Error:
+      self.delegate?.predicateInspectorMatchFail(self, pattern: pattern!)
     }
 
-    if let text = sender.text, rx = self.rx {
+  }
+
+  func validate(textField: UITextField) -> Bool {
+
+    switch coreInspect(textField) {
+    case .NoPattern:
+      return false
+    case .SameAsPrevious, .Pass:
+      return true
+    case .Error:
+      return false
+    }
+
+  }
+
+  private func coreInspect(textField: UITextField) -> InspectResult {
+    if self.pattern == nil {
+      return InspectResult.NoPattern
+    }
+
+    if let text = textField.text, rx = self.rx {
 
       let match = rx.isMatch(text)
 
-      if match == lastMatchResult {
-        return
-      }
-
       if !match {
-        self.delegate?.predicateInspectorMatchFail(self, pattern: pattern!)
-      } else {
-        self.delegate?.predicateInspectorMatchSuccess(self, pattern: pattern!)
+        return InspectResult.Error
       }
 
+      if match == lastMatchResult {
+        return InspectResult.SameAsPrevious
+      }
       lastMatchResult = match
+      return InspectResult.Pass
     }
-  }
-
-  func textFieldValueDidChanged(sender: UITextField) {
-    if self.shouldAutoCheckTextView {
-      self.inspect(sender)
-    }
+    return InspectResult.Error
   }
 }

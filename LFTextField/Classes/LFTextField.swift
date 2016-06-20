@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public protocol LFTextFieldDelegate: class {
-  func textFieldValueDidChange(sender: AnyObject?)
+  func textFieldValueDidChange(textfield: LFTextField?)
 }
 
 public enum LFBorderStyle {
@@ -59,11 +59,9 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     }
   }
 
-  public var enableAutoCheck: Bool = true {
-    didSet {
-      self.inspector?.shouldAutoCheckTextView = enableAutoCheck
-    }
-  }
+  public var enableAutoCheck: Bool = true
+  public var shouldAutoShowHint: Bool = true
+  public private(set) var isShowingHint: Bool = false
 
   var state: LFTextFieldOverlay.State = .Normal {
     didSet {
@@ -258,6 +256,7 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
       self.popup.text = message
       self.popup.sizeToFit()
     }
+    self.isShowingHint = true
 
     if let popup = self.popup {
       popup.frame.offsetInPlace(dx: 0, dy: -popup.bounds.height)
@@ -273,7 +272,10 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     }
   }
 
-  func hidePopupAnimated(animated: Bool = true) {
+  public func hidePopupAnimated(animated: Bool = true) {
+
+    self.isShowingHint = false
+
     if !animated {
 
         self.popup?.alpha = 0.0
@@ -288,10 +290,8 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
   }
 
   public func isValid() -> Bool {
-    self.inspector.inspect(self.inputTextField)
-    return self.inspector.lastMatchResult ?? false
+    return self.inspector.validate(self.inputTextField)
   }
-
 
   // MARK: Predicate Inspector Protocol
   func predicateInspectorMatchSuccess(inspector: PredicateInspector, pattern: Pattern) {
@@ -316,7 +316,11 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
 extension LFTextField: UITextFieldDelegate {
 
   // textfield target selector
-  func textFieldValueDidChange(sender: AnyObject?) {
-    self.delegate?.textFieldValueDidChange(sender)
+  func textFieldValueDidChange(textField: UITextField?) {
+    if self.enableAutoCheck && !self.inspector.validate(self.inputTextField) && self.shouldAutoShowHint && !self.isShowingHint {
+      self.state = .Alert
+      self.showPopupWithTitle(message: self.popupTitle)
+    }
+    self.delegate?.textFieldValueDidChange(self)
   }
 }
