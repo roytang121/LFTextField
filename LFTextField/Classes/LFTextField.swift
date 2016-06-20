@@ -317,9 +317,16 @@ extension LFTextField: UITextFieldDelegate {
 
   // textfield target selector
   func textFieldValueDidChange(textField: UITextField?) {
-    if self.enableAutoCheck && !self.inspector.validate(self.inputTextField) && self.shouldAutoShowHint && !self.isShowingHint {
+    if self.enableAutoCheck && !self.inspector.validate(self.inputTextField) && self.shouldAutoShowHint {
       self.state = .Alert
-      self.showPopupWithTitle(message: self.popupTitle)
+      if !self.isShowingHint {
+        self.showPopupWithTitle(message: self.popupTitle)
+      }
+    } else if self.enableAutoCheck && self.inspector.validate(self.inputTextField) && self.shouldAutoShowHint {
+      self.state = .OK
+      if self.isShowingHint {
+        self.hidePopupAnimated(true)
+      }
     }
     self.delegate?.textFieldValueDidChange(self)
   }
