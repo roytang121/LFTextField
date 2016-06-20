@@ -195,6 +195,10 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     return self.inputTextField?.resignFirstResponder() ?? super.resignFirstResponder()
   }
   
+  override public func becomeFirstResponder() -> Bool {
+    return self.inputTextField?.becomeFirstResponder() ?? super.becomeFirstResponder()
+  }
+  
   override public func layoutSubviews() {
     super.layoutSubviews()
     
