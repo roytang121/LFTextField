@@ -37,7 +37,6 @@ class LFTextFieldOverlay: UIView {
 
   @IBOutlet weak var stateIcon: UIImageView!
 
-  @IBOutlet weak var titleLabelWidthConstraint: NSLayoutConstraint!
   @IBOutlet weak var titleLabelLeadingConstraint: NSLayoutConstraint!
 
   let colorLightGray = UIColor(rgba: "#ddd")
@@ -60,8 +59,14 @@ class LFTextFieldOverlay: UIView {
       self.layoutSubviews()
     }
   }
-
+  
   var displayTitleLabel: Bool = true {
+    didSet {
+      self.layoutIfNeeded()
+    }
+  }
+  
+  var displayBorder: Bool = true {
     didSet {
       self.layoutIfNeeded()
     }
@@ -111,11 +116,9 @@ class LFTextFieldOverlay: UIView {
     // configure if title Label is need
 
     if !displayTitleLabel {
-      self.titleLabelLeadingConstraint.constant = -titleLabel.bounds.width
-      self.borderLayer?.hidden = true
-    } else {
-      self.borderLayer?.hidden = false
+      self.titleLabelLeadingConstraint?.constant = -titleLabel.bounds.width
     }
+    self.borderLayer?.hidden = !displayBorder
   }
 
   var state: State = .Normal {
@@ -229,8 +232,9 @@ class LFTextFieldOverlay: UIView {
     }
 
     if self.borderLayer == nil {
-      let textFieldFrame = titleLabel.layer.frame
-      let borderFrame = CGRectMake(textFieldFrame.width, 0, borderWidth, self.frame.height)
+      let imageFrame = titleIcon.frame
+      
+      let borderFrame = CGRectMake(imageFrame.maxX + 4, 0, borderWidth, self.frame.height)
       let borderLayer = CAShapeLayer()
       borderLayer.frame = borderFrame
       borderLayer.backgroundColor = colorLightGray.CGColor

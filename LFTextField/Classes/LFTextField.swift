@@ -134,9 +134,20 @@ public class LFTextField: UIView, PredicateInspectorDelegate {
     }
   }
 
-  @IBInspectable var displayTitleLabel: Bool = true {
+  @IBInspectable public var displayTitleLabel: Bool = true {
     didSet {
       overlay?.displayTitleLabel = self.displayTitleLabel
+      if displayTitleLabel {
+        overlay?.titleLabel?.text = self.title
+      } else {
+        overlay?.titleLabel.text = ""
+      }
+    }
+  }
+  
+  @IBInspectable public var displayTextFieldBorder: Bool = true {
+    didSet {
+      overlay?.displayBorder = self.displayTextFieldBorder
     }
   }
 
