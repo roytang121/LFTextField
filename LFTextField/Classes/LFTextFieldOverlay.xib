@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-qH-FXh">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
+                    <rect key="frame" x="8" y="0.0" width="35.5" height="80"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -26,33 +26,32 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gq9-uF-dmr">
-                    <rect key="frame" x="216" y="32" width="328" height="17"/>
+                    <rect key="frame" x="107.5" y="32" width="436.5" height="17"/>
                     <color key="textColor" red="0.40423768939393923" green="0.40423768939393923" blue="0.40423768939393923" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAc-9t-sZu">
-                    <rect key="frame" x="80" y="20" width="40" height="40"/>
+                    <rect key="frame" x="51.5" y="20" width="40" height="40"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="SAc-9t-sZu" secondAttribute="height" multiplier="1:1" id="9zS-DK-xSf"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="SAc-9t-sZu" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="3hV-Zy-jdS"/>
+                <constraint firstItem="Ghd-qH-FXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="42C-gx-fXk"/>
                 <constraint firstItem="jdn-ih-YrV" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="7h3-tL-COy"/>
                 <constraint firstItem="Ghd-qH-FXh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FfQ-Zi-Mdc"/>
                 <constraint firstAttribute="trailing" secondItem="jdn-ih-YrV" secondAttribute="trailing" constant="8" id="GOS-PH-KDd"/>
-                <constraint firstItem="Ghd-qH-FXh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="GUN-w3-NQq"/>
                 <constraint firstItem="jdn-ih-YrV" firstAttribute="leading" secondItem="Gq9-uF-dmr" secondAttribute="trailing" constant="8" id="GsG-4T-Jcx"/>
-                <constraint firstItem="Ghd-qH-FXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hus-pi-h0S"/>
                 <constraint firstAttribute="bottom" secondItem="Ghd-qH-FXh" secondAttribute="bottom" id="Hv3-g7-h6V"/>
                 <constraint firstItem="jdn-ih-YrV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lfb-nG-lZz"/>
-                <constraint firstItem="Gq9-uF-dmr" firstAttribute="leading" secondItem="Ghd-qH-FXh" secondAttribute="trailing" constant="16" id="Mya-LA-3XM"/>
+                <constraint firstItem="Gq9-uF-dmr" firstAttribute="leading" secondItem="SAc-9t-sZu" secondAttribute="trailing" constant="16" id="R7i-h0-cbi"/>
                 <constraint firstItem="SAc-9t-sZu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dOd-FF-tPA"/>
-                <constraint firstItem="SAc-9t-sZu" firstAttribute="centerX" secondItem="Ghd-qH-FXh" secondAttribute="centerX" id="y8h-or-Hg3"/>
+                <constraint firstItem="SAc-9t-sZu" firstAttribute="leading" secondItem="Ghd-qH-FXh" secondAttribute="trailing" constant="8" id="yoV-Qf-7Nl"/>
                 <constraint firstItem="Gq9-uF-dmr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="z7E-8Y-zMi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -61,8 +60,6 @@
                 <outlet property="textField" destination="Gq9-uF-dmr" id="DgC-Lv-SJM"/>
                 <outlet property="titleIcon" destination="SAc-9t-sZu" id="kVh-eE-AIH"/>
                 <outlet property="titleLabel" destination="Ghd-qH-FXh" id="Mxg-DH-nBK"/>
-                <outlet property="titleLabelLeadingConstraint" destination="Hus-pi-h0S" id="bGe-XG-c9d"/>
-                <outlet property="titleLabelWidthConstraint" destination="GUN-w3-NQq" id="fHn-Sl-Xp3"/>
             </connections>
         </view>
     </objects>
